@@ -16,6 +16,7 @@ export default function LoginModal() {
     const onChangeId = () => {};
 
     const onChangePassword = () => {};
+
     return (
         <div className={style.modalBackground}>
             <div className={style.modal}>

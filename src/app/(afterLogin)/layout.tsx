@@ -4,6 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ZLogo from '../../../public/zlogo.png';
 import NavMenu from './_component/NavMenu';
+import LogOutButton from './_component/LogOutButton';
+import TrendSection from './_component/TrendSection';
+import FollowRecommend from './_component/FollowRecommend';
 
 export default function AfterLoginLayout({ children }: { children: ReactNode }) {
     return (
@@ -17,8 +20,14 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                             </div>
                         </Link>
                         <nav>
-                            <NavMenu />
+                            <ul>
+                                <NavMenu />
+                            </ul>
+                            <Link href="/compose/tweet" className={styles.postButton}>
+                                게시하기
+                            </Link>
                         </nav>
+                        <LogOutButton />
                     </div>
                 </section>
             </header>
@@ -34,6 +43,8 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                             </svg>
                             <input type="search" />
                         </form>
+                        <TrendSection />
+                        <FollowRecommend />
                     </section>
                 </div>
             </div>

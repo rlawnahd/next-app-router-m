@@ -63,10 +63,12 @@
     font-weight: 700;
     font-size: 17px;
     border-radius: 26px;
+    text-decoration: none;
 }
 
 .postButton:hover {
     background-color: rgb(26, 140, 216);
+    text-decoration: underline;
 }
 
 .rightSectionWrapper {

@@ -5,7 +5,7 @@ import React from 'react';
 import style from './navMenu.module.css';
 export default function NavMenu() {
     const segment = useSelectedLayoutSegment();
-    const me = { id: '1' };
+    const me = { id: 'mong' };
     return (
         <>
             <li>
