@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.40.0",
     "@types/jest": "^29.5.12",
     "next": "^14",
     "react": "^18",
