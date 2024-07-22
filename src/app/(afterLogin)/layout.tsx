@@ -12,7 +12,7 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
     return (
         <div className={styles.container}>
             <header className={styles.leftSectionWrapper}>
-                <section className={styles.leftSectionWrapper}>
+                <section className={styles.leftSection}>
                     <div className={styles.leftSectionFixed}>
                         <Link className={styles.logo} href="/home">
                             <div className={styles.logoPill}>
@@ -46,7 +46,12 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                             </form>
                         </div>
                         <TrendSection />
-                        <FollowRecommend />
+                        <div className={styles.followRecommend}>
+                            <h3>팔로우 추천</h3>
+                            <FollowRecommend />
+                            <FollowRecommend />
+                            <FollowRecommend />
+                        </div>
                     </section>
                 </div>
             </div>
