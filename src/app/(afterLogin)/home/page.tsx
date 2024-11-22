@@ -1,4 +1,4 @@
-import { Post } from '../_component/Post';
+import Post from '../_component/Post';
 import PostForm from './_components/PostForm';
 import Tab from './_components/Tab';
 import TabProvider from './_components/TabProvider';
